@@ -1,4 +1,4 @@
-def calculate ():
+def calculate():
     while True:
         try:
             value_digit = float(input("Add a number:"))
@@ -34,7 +34,7 @@ def calculate ():
                     print('You chose the invalid characters')
         print("Your answer:"'\n{} / {} ='.format(value_digit, value_another_digit), value_digit / value_another_digit)
 
-    def retry ():
+    def retry():
         calc_retry = str(input('''
 Do you want to calculate once again?
 Please type your choice by buttons:
