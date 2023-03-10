@@ -47,14 +47,20 @@ print("Перший елемент переставити на останнє м
 Наприклад "43 більше ніж 34, але менше ніж 56". Знайти суму ВСІХ ЧИСЕЛ (А НЕ ЦИФР) у цьому рядку.
 Для цього прикладу відповідь - 133. (використовуйте split та перевірку isdigit)"""
 
-arr_text = "Маємо числа - 43 55 68"
+arr_text = "Маємо числа - ss432fff, 55ss 68 12 7g"
 elements_arr = arr_text.split()
 
 sum_number = 0
 for element in elements_arr:
+    literal_arr = []
     if element.isdigit():
         sum_number += int(element)
-
+    else:
+        for literal in element:
+            if literal.isdigit():
+                literal_arr.append(literal)
+        if len(literal_arr) != 0:
+            sum_number += int(''.join(literal_arr))
 print("Сума всіх чисел: ", sum_number)
 
 """Наведено список чисел. Визначте, скільки в цьому списку елементів,
