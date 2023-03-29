@@ -21,7 +21,7 @@ directories = write_directory(directory_file)
 directories_copy = write_directory(directory_file)
 print(directories)
 
-bool_value = False
+bool_value = True
 
 
 def dict_sorted(directory, b_value):
